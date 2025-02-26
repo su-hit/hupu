@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>虎扑NBA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        /* 导航栏 */
+        .nav {
+            background: #cc0000;
+            padding: 12px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+            font-size: 16px;
+        }
+
+        /* 主体布局 */
+        .container {
+            max-width: 1200px;
+            margin: 60px auto 0;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* 左侧广告区 */
+        .left-column {
+            width: 280px;
+        }
+        .ad-area {
+            background: #f5f5f5;
+            height: 400px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        /* 右侧内容区 */
+        .right-column {
+            flex: 1;
+        }
+        .news-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .news-time {
+            color: #999;
+            font-size: 12px;
+            margin: 8px 0;
+        }
+        .news-content {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 比赛信息 */
+        .match-list {
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <a href="#">首页</a>
+        <a href="#">NBA</a>
+        <a href="#">社区</a>
+        <a href="#">步行街</a>
+        <a href="#">国际足球</a>
+        <a href="#">CBA</a>
+        <a href="#">电竞</a>
+    </nav>
+
+    <div class="container">
+        <!-- 左侧列 -->
+        <div class="left-column">
+            <div class="ad-area"><!-- 广告位 --></div>
+            
+            <div class="match-list">
+                <h3>近期比赛</h3>
+                <div class="news-item">
+                    <div>上海 vs 北京</div>
+                    <div class="news-time">2-27 19:35</div>
+                </div>
+                <!-- 更多比赛... -->
+            </div>
+        </div>
+
+        <!-- 右侧内容 -->
+        <div class="right-column">
+            <h2>今日资讯</h2>
+            
+            <!-- 新闻条目 -->
+            <div class="news-item">
+                <h3>湖凯热牛！媒体晒照：2010年代的篮球回忆满满</h3>
+                <div class="news-time">2月26日 09:30</div>
+                <p class="news-content">知名媒体晒出多支球队的经典阵容照片，引发球迷热烈讨论...</p>
+                <div class="actions">
+                    <button>评论 152</button>
+                    <button>分享</button>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3>能开到西部前六吗？爱德华兹回顾力克蕾霍</h3>
+                <div class="news-time">2月26日 08:45</div>
+                <p class="news-content">森林狼新星接受采访谈球队近期表现...</p>
+                <div class="actions">
+                    <button>评论 89</button>
+                    <button>分享</button>
+                </div>
+            </div>
+            <!-- 更多新闻... -->
+        </div>
+    </div>
+</body>
+</html>
